@@ -36,11 +36,12 @@ Users should be able to:
 
 ### Built with
 
-- Pug js
-- Scss
-- JavaScript
+- pug js
+- scss
+- javascript
 - Mobile-first workflow
 - [Bootstrap 5](https://getbootstrap.com/)
+- gulp js
 
 ## Author
 
