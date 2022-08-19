@@ -1,0 +1,55 @@
+.services{
+    .bg-graphic{
+        background-image: url("../../images/mobile/image-graphic-design.jpg");
+        background-size: cover;
+        background-position: top center;
+        height: 90vh;
+    }
+    .service{
+        margin-bottom: 38px!important;
+    }
+    .head-service{
+        width: 300px;
+        font-size: 1.5rem;
+        font-weight: 900;
+        color: $darkDesaturatedCyan;
+    }
+    .paragraph-service{
+        font-size: 0.88rem;
+        width: 300px;
+        font-family: $mainFont;
+        color: $darkDesaturatedCyan;
+        margin-top: 22px;
+    }
+    .bg-photography{
+        background-image: url("../../images/mobile/image-photography.jpg");
+        background-size: cover;
+        background-position: top center;
+        height: 90vh;
+        .head-photography,.paragraph-photography{
+            color: $darkBlue;
+        }
+    }
+}
+//changes for small screen
+@include media-breakpoint-up(sm){
+    .services{
+        .bg-graphic{
+            background-image: url("../../images/desktop/image-graphic-design.jpg");
+        }
+        .bg-photography{
+            background-image: url("../../images/desktop/image-photography.jpg");
+        }
+        .head-service{
+            width: 332px;
+            font-size: 1.7rem;
+        }
+        .paragraph-service{
+            font-size: 1rem;
+            width: 332px;
+        }
+        .service{
+            margin-bottom: 60px!important;
+        }
+    }
+}

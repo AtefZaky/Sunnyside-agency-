@@ -1,0 +1,137 @@
+.header{
+    background-image: url("../../images/mobile/image-header.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 85vh;
+    padding: 20px 10px;
+    .humburger-icon{
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.75;
+        }
+    }
+    .hide{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav-list{
+        width: calc(100% - 1.5rem);
+        height: 48vh;
+        padding: 0px !important;
+        margin: auto;
+        background-color: $white;
+        top:80px;
+        z-index: 3;
+        .nav-item{
+            font-family: 'Barlow';
+            padding: 13px;
+            font-size: 18px;
+            list-style: none;
+            .nav-link{
+                color: $darkGrayishBlue;
+                transition: 0.3s ease-in-out;
+            }
+            &:hover{
+                .nav-link{
+                    color: $grayishBlue;
+                }
+            }
+            .main-button{
+                font-family: 'Fraunces';
+                background-color: $yellow;
+                font-size: 14px;
+                padding: 15px 30px;
+                font-weight: 900;
+                transition: .3s ease-in-out;
+                &:hover{
+                    color: $white
+                }
+            }
+        }
+        //this before element to make the arrow that point to the humburger icon when the list is active in small screen
+        &::before{
+            content: "";
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            border-style: solid;
+            border-width: 25px;
+            border-color: transparent #fff transparent transparent;
+            right: 0;
+            top: -24px;
+        }
+    }
+    .show{
+        visibility: visible !important;
+        opacity: 100% !important;
+    }
+    .hero{
+        margin-top: 75px;
+        .heading{
+            color: $white;
+            font-size: 2.3rem;
+            letter-spacing: 0.5rem;
+            font-weight: 900;
+        }
+        .arrow-down{
+            margin: 0 auto;
+            right: 0px;
+            left: 0px;
+            top: 156px;
+        }
+    }
+}
+// changes for small screen
+@include media-breakpoint-up(sm){
+    .header{
+        background-image: url("../../images/desktop/image-header.jpg");
+        .arrow-down{
+            top: 145px !important;
+        }
+    }
+}
+// changes for large screen
+@include media-breakpoint-up(lg){
+    .header{
+        height: 100vh;
+        .hero{
+            .heading{
+                font-size: 2.8rem !important;
+            }
+        }
+        .nav-list{
+            visibility: visible;
+            opacity: 100%;
+            position: static !important;
+            width: auto;
+            height: auto;
+            margin: 0;
+            background-color: transparent;
+            align-items: center;
+            &::before{
+                display: none;
+            }
+            .nav-item:not(:last-of-type){
+                margin-right: 20px;
+            }
+            .nav-item{
+                font-size: 16px;
+            }
+            .nav-link{
+                color: $white !important;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+            .main-button{
+                background-color: $white !important;
+                border: none !important;
+                font-size: 13px !important;
+                &:hover{
+                    background-color: rgba($color: $white, $alpha: 0.3)!important;
+                }
+            }
+        }
+    }
+}

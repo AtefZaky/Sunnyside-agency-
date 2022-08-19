@@ -1,0 +1,1 @@
+const humburgerIcon=document.querySelector(".humburger-icon"),navList=document.querySelector(".nav-list");humburgerIcon.onclick=(()=>{navList.classList.toggle("show"),humburgerIcon.classList.toggle("opacity-75")});

@@ -1,0 +1,23 @@
+.footer{
+    background-color: $grayishBlue;
+    .logo-footer{
+        color: $darkDesaturatedCyan;
+    }
+    .nav-link{
+        font-family: $mainFont;
+        font-size: 0.95rem;
+        color: $veryDarkGrayishBlue;
+        transition: 0.3s all;
+        &:hover{
+            color: $white;
+        }
+    }
+    .social-icon{
+        color: $darkDesaturatedCyan;
+        transition: 0.3s all;
+        cursor: pointer;
+        &:hover{
+            color: $white;
+        }
+    }
+}

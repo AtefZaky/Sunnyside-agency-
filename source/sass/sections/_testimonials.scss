@@ -1,0 +1,47 @@
+.testimonials{
+    .test-head{
+        margin: 50px 0;
+        color: $grayishBlue;
+        font-size: 0.8rem;
+        letter-spacing: 4px;
+        font-weight: 900;
+    }
+    .person-img{
+        width: 60px;
+        height: 60px;
+        padding: 0px !important;
+    }
+    .test-paragraph{
+        font-family: $mainFont;
+        color: $veryDarkGrayishBlue;
+        width: 279px;
+        font-size: 0.94rem;
+    }
+    .person-name{
+        color: $veryDarkDesaturatedBlue;
+        font-weight: 900;   
+        font-size: 0.95rem;    
+    }
+    .person-jop{
+        font-size: 12px;
+        font-family: $mainFont;
+        color: $grayishBlue;
+    }
+}
+// changes for medium screen
+@include media-breakpoint-up(md) {
+    .testimonials{
+        .test-paragraph{
+            width: 280px;
+        }
+    }
+}
+//changes for large screen
+@include media-breakpoint-up(lg) {
+    .testimonials{
+        .test-head{
+            font-size: 1rem;
+            margin: 60px 0px;
+        }
+    }
+}

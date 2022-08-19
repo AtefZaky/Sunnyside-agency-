@@ -1,0 +1,14 @@
+// bootstrap scss functions
+@import "./bootstrap/functions";
+// bootstrap scss variables
+@import "./bootstrap/variables";
+// bootstrap scss breakpoints
+@import "./bootstrap/breakpoints";
+@import "./helpers/globals";
+@import "./helpers/variables";
+@import "./sections/header";
+@import "./sections/offer";
+@import "./sections/services";
+@import "./sections/testimonials";
+@import "./sections/gallery";
+@import "./sections/footer";

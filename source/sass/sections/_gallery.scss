@@ -1,0 +1,27 @@
+.gallery{
+    margin-top: 60px;
+    .row{
+        margin: 0 !important;
+    }
+    .row>*{
+        padding: 0px !important;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    .img-desktop{
+        display: none;
+    }
+}
+// changes for meduim screen
+@include media-breakpoint-up(md) {
+    .gallery{
+        .img-mobile{
+            display: none;
+        }
+        .img-desktop{
+            display: block;
+        }
+    }
+}
