@@ -71,14 +71,6 @@
         }
     } 
 }
-//changes for small screen 
-@include media-breakpoint-up(sm){
-    .we-offer{
-        .img-one{
-            background-image: url("../../images/desktop/image-transform.jpg");
-        }
-    }
-}
 //changes for medium screen
 @include media-breakpoint-up(md){
     .we-offer{
