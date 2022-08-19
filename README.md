@@ -30,17 +30,18 @@ Users should be able to:
 ### Links
 
 - Solution URL: [See the solution](https://github.com/AtefZaky/Sunnyside-agency-landing-page)
-- Live Site URL: [See it live](https://atefzaky.github.io/Sunnyside-agency-landing-page/)
+- Live Site URL: [See it live](https://atefzaky.github.io/Sunnyside-agency-landing-page/dist/)
 
 ## My process
 
 ### Built with
 
-- Pug js
-- Scss
-- JavaScript
+- pug js
+- scss
+- javascript
 - Mobile-first workflow
 - [Bootstrap 5](https://getbootstrap.com/)
+- gulp js
 
 ## Author
 
