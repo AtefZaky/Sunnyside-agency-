@@ -1,6 +1,6 @@
 .services{
     .bg-graphic{
-        background-image: url("../images/mobile/image-graphic-design.jpg");
+        background-image: url("../images/mobile/image-graphic-design.webp");
         background-size: cover;
         background-position: top center;
         height: 90vh;
@@ -23,7 +23,7 @@
         margin-top: 27px;
     }
     .bg-photography{
-        background-image: url("../images/mobile/image-photography.jpg");
+        background-image: url("../images/mobile/image-photography.webp");
         background-size: cover;
         background-position: top center;
         height: 90vh;
@@ -37,12 +37,12 @@
 @include media-breakpoint-up(sm){
     .services{
         .bg-graphic{
-            background-image: url("../images/desktop/image-graphic-design.jpg");
+            background-image: url("../images/desktop/image-graphic-design.webp");
             height: calc(100vh - 300px);
             max-height: 900px;
         }
         .bg-photography{
-            background-image: url("../images/desktop/image-photography.jpg");
+            background-image: url("../images/desktop/image-photography.webp");
             height: calc(100vh - 300px);
             max-height: 900px;
         }

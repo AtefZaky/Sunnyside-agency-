@@ -1,5 +1,5 @@
 .header{
-    background-image: url("../images/mobile/image-header.jpg");
+    background-image: url("../images/mobile/image-header.webp");
     background-size: cover;
     background-position: bottom center;
     min-height: 100vh;
@@ -87,7 +87,7 @@
 // changes for small screen
 @include media-breakpoint-up(sm){
     .header{
-        background-image: url("../images/desktop/image-header.jpg");
+        background-image: url("../images/desktop/image-header.webp");
         min-height: 600px;
         .arrow-down{
             top: 165px !important;
