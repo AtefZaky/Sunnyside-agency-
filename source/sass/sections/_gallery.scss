@@ -1,5 +1,5 @@
 .gallery{
-    margin-top: 60px;
+    margin-top: 50px;
     .row{
         margin: 0 !important;
     }
@@ -23,5 +23,10 @@
         .img-desktop{
             display: block;
         }
+    }
+}
+@include media-breakpoint-up(lg){
+    .gallery{
+        margin-top: 0;
     }
 }

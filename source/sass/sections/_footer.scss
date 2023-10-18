@@ -1,23 +1,32 @@
 .footer{
-    background-color: $grayishBlue;
-    .logo-footer{
-        color: $darkDesaturatedCyan;
+    background-color: #90D4C6;
+    padding-top: 64px;
+    padding-bottom: 80px;
+    ul{
+        gap: 57px;
     }
     .nav-link{
         font-family: $mainFont;
-        font-size: 0.95rem;
-        color: $veryDarkGrayishBlue;
+        font-size: 18px;
+        color: #458D7E;
         transition: 0.3s all;
         &:hover{
             color: $white;
         }
     }
     .social-icon{
-        color: $darkDesaturatedCyan;
+        margin-top: 2.5rem;
+        color: #2C7566;
         transition: 0.3s all;
         cursor: pointer;
         &:hover{
             color: $white;
         }
+    }
+}
+@include media-breakpoint-up(lg){
+    .footer{
+        padding-top: 72px;
+        padding-bottom: 72px;
     }
 }

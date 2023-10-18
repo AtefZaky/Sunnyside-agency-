@@ -2,7 +2,7 @@
     background-image: url("../images/mobile/image-header.jpg");
     background-size: cover;
     background-position: bottom center;
-    height: 85vh;
+    min-height: 100vh;
     padding: 20px 10px;
     .humburger-icon{
         transition: 0.3s ease-in-out;
@@ -27,6 +27,8 @@
             font-family: 'Barlow';
             padding: 13px;
             font-size: 18px;
+            font-weight: 600;
+            line-height: 25px;
             list-style: none;
             .nav-link{
                 color: $darkGrayishBlue;
@@ -41,8 +43,8 @@
                 font-family: 'Fraunces';
                 background-color: $yellow;
                 font-size: 14px;
-                padding: 15px 30px;
-                font-weight: 900;
+                padding: 16px 32px;
+                font-weight: 700;
                 transition: .3s ease-in-out;
                 &:hover{
                     color: $white
@@ -67,11 +69,11 @@
         opacity: 100% !important;
     }
     .hero{
-        margin-top: 75px;
+        margin-top: 80px;
         .heading{
             color: $white;
             font-size: 2.3rem;
-            letter-spacing: 0.5rem;
+            letter-spacing: 8.75px;
             font-weight: 900;
         }
         .arrow-down{
@@ -86,18 +88,19 @@
 @include media-breakpoint-up(sm){
     .header{
         background-image: url("../images/desktop/image-header.jpg");
+        min-height: 600px;
         .arrow-down{
-            top: 145px !important;
+            top: 165px !important;
         }
     }
 }
 // changes for large screen
 @include media-breakpoint-up(lg){
     .header{
-        height: 100vh;
+        min-height: 50rem;
         .hero{
             .heading{
-                font-size: 2.8rem !important;
+                font-size: 56px !important;
             }
         }
         .nav-list{
@@ -116,7 +119,7 @@
                 margin-right: 20px;
             }
             .nav-item{
-                font-size: 16px;
+                font-size: 18px;
             }
             .nav-link{
                 color: $white !important;
@@ -127,7 +130,7 @@
             .main-button{
                 background-color: $white !important;
                 border: none !important;
-                font-size: 13px !important;
+                font-size: 15px !important;
                 &:hover{
                     background-color: rgba($color: $white, $alpha: 0.3)!important;
                 }
